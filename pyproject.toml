@@ -1,0 +1,24 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "tinker-rl-cost"
+version = "0.1.0"
+description = "Calculate costs for Tinker RL training runs from W&B or local directories"
+authors = [
+    {name = "astOwOlfo", email = "volodimir1024@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = [
+    "wandb>=0.24.0",
+]
+
+[project.scripts]
+tinker-rl-cost = "tinker_rl_cost.cli:main"
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0.0",
+]
