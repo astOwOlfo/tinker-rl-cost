@@ -21,7 +21,7 @@ pip install git+https://github.com/astowolfo/tinker-rl-cost
 To print the cost of a run:
 
 ```bash
-tinker-rl-cost https://wandb.ai/entity/project/runs/run_id
+uv run tinker-rl-cost https://wandb.ai/entity/project/runs/run_id
 ```
 
 (you will first need to run `export WANDB_API_KEY=...` or `wandb login`)
@@ -29,7 +29,7 @@ tinker-rl-cost https://wandb.ai/entity/project/runs/run_id
 or
 
 ```bash
-tinker-rl-cost /path/to/run/directory
+uv run tinker-rl-cost /path/to/run/directory
 ```
 
 The directory should be the one you used as the `log_path` to `tinker_cookbook.rl.train.Config` when doing the RL run.
