@@ -222,6 +222,8 @@ def calculate_cost_from_directory(directory_path):
     if not has_eval_ob:
         print("\033[93mWARNING: No evaluation metrics found (test/env/all/total_ob_tokens, test/env/all/total_ac_tokens)\033[0m")
         print()
+        print("WARNING: If collating multi-turn rollouts, this cost is an overestimate.")
+        print()
         print(f"Cost: ${total_cost:.4f}")
     else:
         print(f"Cost: ${total_cost:.4f} (train: ${training_cost:.4f}, evaluation: ${eval_cost:.4f})")
