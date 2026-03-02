@@ -39,6 +39,7 @@ VALID_MODELS = {
     "meta-llama/Llama-3.2-3B",
     "meta-llama/Llama-3.2-1B",
     "moonshotai/Kimi-K2-Thinking",
+    "moonshotai/Kimi-K2.5",
 }
 
 # Pricing in USD per million tokens (prefill=input, sample=output, train=training)
@@ -59,6 +60,7 @@ PRICING = {
     "openai/gpt-oss-120b": {"input": 0.18, "output": 0.44, "train": 0.52},
     "openai/gpt-oss-20b": {"input": 0.12, "output": 0.30, "train": 0.36},
     "moonshotai/Kimi-K2-Thinking": {"input": 0.98, "output": 2.44, "train": 2.93},
+    "moonshotai/Kimi-K2.5": {"input": 1.47, "output": 3.66, "train": 4.40},
 }
 
 
